@@ -179,9 +179,10 @@ if __name__ == "__main__":
     tts.set_rate(int(rate))
     volume = input("請輸入音量 (0 正常 100 最大 -100 最小)：") or "0"
     tts.set_volume(int(volume))
+    filename = input("請輸入文字檔的檔案名稱：") or "test.txt"
     
     # 顯示當前設置
     tts.print_voice_info()
     
     # 讀取文件
-    tts.read_file("test.txt")
+    tts.read_file(filename)
